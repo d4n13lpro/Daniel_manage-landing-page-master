@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],/*le dice a la herramienta que escanee todos los archivos .html y .js en el directorio src y en sus subdirectorios.*/ 
+  content: ["./**/*.{html,js}"],/*le dice a la herramienta que escanee todos los archivos .html y .js en el directorio src y en sus subdirectorios.*/ 
   theme: {
     extend: {
       fontFamily:{
