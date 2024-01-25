@@ -1,0 +1,32 @@
+@tailwind base;
+/* Inyecta los estilos base de Tailwind, que incluyen estilos de normalización y utilidades de nivel de bloque. */
+@tailwind components;
+/* Inyecta los componentes de Tailwind, que son clases de utilidad definidas por el usuario. */
+@tailwind utilities;
+/* Inyecta las utilidades de Tailwind, que son generadas dinámicamente según tu archivo de configuración. */
+
+@layer components {
+    .wrapper {
+        @apply w-[90%] flex mx-auto overflow-hidden max-w-screen-xl;
+    }
+
+    .button {
+        @apply bg-bright-red text-vary-light-gray block max-w-max py-4 px-12 rounded-full;
+    }
+
+    .footer-area {
+        grid-template-areas:
+            "form"
+            "navigation"
+            "social-media"
+            "logo"
+            "copy";
+    }
+
+    .footer-area-md {
+        grid-template-areas:
+            "logo           navigation  form"
+            "social-media   navigation  copy";
+    }
+
+}
